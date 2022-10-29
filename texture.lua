@@ -3,11 +3,10 @@ for z, K in pairs(game.Lighting:GetChildren()) do
 if K:IsA"Sky"then 
 K:Remove(); delay(.25)
 end
-return nil
 end
 
-task.wait(0.31)
-if game.Lighting ~= nil then
+spawn(function()
+wait(0.25)
 sky.Name = "Texture"
 sky.SkyboxBk = "http://www.roblox.com/asset/?id=150939022"
 sky.SkyboxDn = "http://www.roblox.com/asset/?id=150939038"
@@ -16,4 +15,4 @@ sky.SkyboxLf = "http://www.roblox.com/asset/?id=150939056"
 sky.SkyboxRt = "http://www.roblox.com/asset/?id=150939063"
 sky.SkyboxUp = "http://www.roblox.com/asset/?id=150939082"
 sky.Parent = game.Lighting
-end
+end)
