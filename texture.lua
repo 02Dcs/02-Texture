@@ -1,12 +1,4 @@
 local sky = Instance.new"Sky" 
-for z, K in pairs(game.Lighting:GetChildren()) do 
-if K:IsA"Sky"then 
-K:Remove(); delay(.25)
-end
-end
-
-spawn(function()
-wait(0.25)
 sky.Name = "Texture"
 sky.SkyboxBk = "http://www.roblox.com/asset/?id=150939022"
 sky.SkyboxDn = "http://www.roblox.com/asset/?id=150939038"
@@ -15,4 +7,12 @@ sky.SkyboxLf = "http://www.roblox.com/asset/?id=150939056"
 sky.SkyboxRt = "http://www.roblox.com/asset/?id=150939063"
 sky.SkyboxUp = "http://www.roblox.com/asset/?id=150939082"
 sky.Parent = game.Lighting
-end)
+
+local m = 0 
+for z, K in pairs(game.Lighting:GetChildren()) do 
+if K:IsA"Sky" and not K.Name =="Texture" then 
+K:Remove(); delay(.25)
+m = m + 1
+end
+return nil
+end
