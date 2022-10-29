@@ -9,12 +9,16 @@ sky.SkyboxUp="http://www.roblox.com/Asset/?ID=12064131"
 sky.Parent=game.Lighting
 
 local m=0 
-for z, K in pairs(game.Lighting:GetChildren()) do 
-if K:IsA"Sky" and not K.Name =="Texture" then 
-K:Remove(); delay(.25)
-m = m + 1
-else 
-print"Texture V1.0"
-end
-return nil
-end
+repeat
+	m = m + 1
+	for z, K in pairs(game.Lighting:GetChildren()) do 
+		if K:IsA"Sky" and not K.Name =="Texture" then 
+			K:Remove(); delay(.25)
+			m = m + 1
+		else 
+			print"Texture V1.0"
+		end
+		return nil
+	end
+until m == 2
+
