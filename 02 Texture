@@ -1,0 +1,10 @@
+local sky = Instance.new"Sky" 
+
+sky.Name = "Texture"
+sky.SkyboxBk = "http://www.roblox.com/asset/?id=271042516"
+sky.SkyboxDn = "http://www.roblox.com/asset/?id=271077243"
+sky.SkyboxFt = "http://www.roblox.com/asset/?id=271042556"
+sky.SkyboxLf = "http://www.roblox.com/asset/?id=271042310"
+sky.SkyboxRt = "http://www.roblox.com/asset/?id=271042467"
+sky.SkyboxUp = "http://www.roblox.com/asset/?id=271077958"
+sky.Parent = game.Lighting
