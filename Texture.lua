@@ -1,11 +1,11 @@
 local sky=Instance.new"Sky" 
 sky.Name="Texture"
-sky.SkyboxBk="http://www.roblox.com/asset/?id=150939022"
-sky.SkyboxDn="http://www.roblox.com/asset/?id=150939038"
-sky.SkyboxFt="http://www.roblox.com/asset/?id=150939047"
-sky.SkyboxLf="http://www.roblox.com/asset/?id=150939056"
-sky.SkyboxRt="http://www.roblox.com/asset/?id=150939063"
-sky.SkyboxUp="http://www.roblox.com/asset/?id=150939082"
+sky.SkyboxBk="http://www.roblox.com/Asset/?ID=12064107"
+sky.SkyboxDn="http://www.roblox.com/Asset/?ID=12064152"
+sky.SkyboxFt="http://www.roblox.com/Asset/?ID=12064121"
+sky.SkyboxLf="http://www.roblox.com/Asset/?ID=12063984"
+sky.SkyboxRt="http://www.roblox.com/Asset/?ID=12064115"
+sky.SkyboxUp="http://www.roblox.com/Asset/?ID=12064131"
 sky.Parent=game.Lighting
 
 local m=0 
