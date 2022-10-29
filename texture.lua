@@ -6,7 +6,8 @@ end
 return nil
 end
 
-if game.Lighting ~= nil then 
+task.wait(0.31)
+if game.Lighting ~= nil then
 sky.Name = "Texture"
 sky.SkyboxBk = "http://www.roblox.com/asset/?id=150939022"
 sky.SkyboxDn = "http://www.roblox.com/asset/?id=150939038"
