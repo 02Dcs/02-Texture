@@ -1,4 +1,4 @@
-getgenv().PinkMode = nil;
+getgenv().PinkMode =  false;
 
 local sky = Instance.new"Sky" 
 for z, K in pairs(game.Lighting:GetChildren()) do 
