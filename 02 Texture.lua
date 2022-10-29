@@ -1,3 +1,5 @@
+-- gay
+
 local sky = Instance.new"Sky" 
 for z, K in pairs(game.Lighting:GetChildren()) do 
 if K:IsA"Sky"then 
