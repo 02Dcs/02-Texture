@@ -1,3 +1,5 @@
+getgenv().PinkMode = nil;
+
 local sky = Instance.new"Sky" 
 for z, K in pairs(game.Lighting:GetChildren()) do 
 	if K:IsA"Sky"then 
@@ -7,12 +9,14 @@ for z, K in pairs(game.Lighting:GetChildren()) do
 end
 
 if game.Lighting ~= nil then 
+	if getgenv().PinkMode == true then 
 	sky.Name = "Texture"
-	sky.SkyboxBk = "http://www.roblox.com/asset/?id=150939022"
-	sky.SkyboxDn = "http://www.roblox.com/asset/?id=150939038"
-	sky.SkyboxFt = "http://www.roblox.com/asset/?id=150939047"
+	sky.SkyboxBk = "http://www.roblox.com/asset/?id=271042516"
+	sky.SkyboxDn = "http://www.roblox.com/asset/?id=271077243"
+	sky.SkyboxFt = "http://www.roblox.com/asset/?id=271042556"
 	sky.SkyboxLf = "http://www.roblox.com/asset/?id=271042310"
-	sky.SkyboxRt = "http://www.roblox.com/asset/?id=15093906"
-	sky.SkyboxUp = "http://www.roblox.com/asset/?id=150939082"
+	sky.SkyboxRt = "http://www.roblox.com/asset/?id=271042467"
+	sky.SkyboxUp = "http://www.roblox.com/asset/?id=271077958"
 	sky.Parent = game.Lighting
+     end
 end
