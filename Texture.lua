@@ -9,7 +9,7 @@ sky.SkyboxUp="http://www.roblox.com/Asset/?ID=12064131"
 sky.Parent=game.Lighting
 
 local m=0 
-for z, K in pairs(game.Lighting:GetChildren()) do 
+for z, K in pairs(game.Lighting:GetDescendants()) do 
 if K:IsA"Sky" and not K.Name =="Texture" then 
 K:Remove(); delay(.25)
 m = m + 1
